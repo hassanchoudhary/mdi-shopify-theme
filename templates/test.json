@@ -1,3 +1,11 @@
-{% unless template.suffix contains "tes-page" %}
-          {% section 'test-section' %}
-     {% endunless %}
+{
+    "sections": {
+      "main": {
+        "type": "test-section"
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }
+  
