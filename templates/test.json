@@ -1,0 +1,3 @@
+{% unless template.suffix contains "tes-page" %}
+          {% section 'test-section' %}
+     {% endunless %}
