@@ -181,7 +181,8 @@
       "type": "test-section",
       "settings": {
         "custom_text_title": "Title",
-        "custom_text_body": "<p>Add your text here<\/p>"
+        "custom_text_body": "<p>Add your text here<\/p>",
+        "custom-gr": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg"
       }
     }
   },
