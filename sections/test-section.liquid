@@ -1,7 +1,12 @@
-<div class="custom-text-section">
-    <h2> {{ section.settings.custom_text_title }} </h2>
-    <div>{{ section.settings.custom_text_body }}</div>
-  </div>
+<section style="background-image: url({{ section.settings.background-img }})">
+    <div class="container">
+        <div class="custom-text-section">
+            <h2> {{ section.settings.custom_text_title }} </h2>
+            <div>{{ section.settings.custom_text_body }}</div>
+          </div>
+    </div>
+</section>
+
   
   {% schema %}
     {
@@ -18,6 +23,11 @@
           "type": "richtext",
           "label": "Add custom text below",
           "default": "<p>Add your text here</p>"
+        },
+        {
+            "id": "background-img",
+            "type": "image",
+            "label": "Add Backgrond Image"
         }
       ],
       "presets": [
