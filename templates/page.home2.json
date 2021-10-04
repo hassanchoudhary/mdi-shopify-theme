@@ -11,7 +11,8 @@
     "second": {
       "type": "second-section",
       "settings": {
-        "custom_text_body": "<p>jkjhkjhkjhkj<\/p>"
+        "custom_text_body": "<p>jkjhkjhkjhkj<\/p>",
+        "sec_img": "shopify:\/\/shop_images\/retail-shopping-package.jpg"
       }
     }
   },
