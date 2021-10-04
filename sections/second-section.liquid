@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="{{ section.settings.sec_img }}" alt="">
+                <img src="{{ block.settings.sec_img | img_url: 'master' }}" alt="">
             </div>
             <div class="col">
                 <p>{{ section.settings.custom_text_body }}</p>
