@@ -7,6 +7,9 @@
         "custom_text_body": "<p>Add your text here<\/p>",
         "background-img": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg"
       }
+    },
+    "second": {
+      "type": "second-section"
     }
   },
   "order": [

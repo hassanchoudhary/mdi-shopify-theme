@@ -1,0 +1,38 @@
+<section style="background-color: blue; height: 200px;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="{{ section.settings.sec_img }}" alt="">
+            </div>
+            <div class="col">
+                <p>{{ section.settings.custom_text_body }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  {% schema %}
+    {
+      "name": "Header Box",
+      "settings": [
+        {
+          "id": "custom_text_body",
+          "type": "richtext",
+          "label": "Add custom text below",
+          "default": "<p>Add your text here</p>"
+        },
+        {
+            "id": "sec_img",
+            "type": "image_picker",
+            "label": "Add Backgrond Image"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Second Section",
+          "category": "Custom"
+        }
+      ]
+    }
+  {% endschema %}
