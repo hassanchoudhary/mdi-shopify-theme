@@ -9,7 +9,11 @@
       }
     },
     "second": {
-      "type": "second-section"
+      "type": "second-section",
+      "settings": {
+        "custom_text_body": "<p>ghgfhgfhgfhfg<\/p>",
+        "sec_img": "shopify:\/\/shop_images\/retail-shopping-package.jpg"
+      }
     }
   },
   "order": [
