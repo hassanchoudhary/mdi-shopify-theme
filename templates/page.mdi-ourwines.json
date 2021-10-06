@@ -1,4 +1,4 @@
-
+{
   "sections": {
     "main": {
       "type": "nav-menu",
@@ -15,17 +15,16 @@
       "settings": {
       }
     },
-    "product": {
-        "type": "wine-section2",
-        "settings": {
-        }
+    "collection": {
+      "type": "wine-section2",
+      "settings": {
       }
+    }
   },
   "order": [
     "main",
     "header",
     "description",
-    "product"
+    "collection"
   ]
 }
-
