@@ -9,11 +9,23 @@
         "type": "header-contact",
         "settings": {
         }
+      },
+      "form": {
+        "type": "contact-section2",
+        "settings": {
+        }
+      },
+      "connect": {
+        "type": "home-section5",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
-      "header"
+      "header",
+      "form",
+      "connect"
     ]
   }
   
