@@ -19,13 +19,19 @@
         "type": "story-section2",
         "settings": {
         }
+      },
+      "state": {
+        "type": "story-section3",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
       "header",
       "content",
-      "cave"
+      "cave",
+      "state"
     ]
   }
   
