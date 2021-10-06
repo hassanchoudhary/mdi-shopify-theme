@@ -10,7 +10,7 @@
         "settings": {
         }
       },
-      "wine-des": {
+      "description": {
         "type": "wine-section1",
         "settings": {
         }
@@ -19,7 +19,7 @@
     "order": [
       "main",
       "header",
-      "wine-dis"
+      "discription"
     ]
   }
   
