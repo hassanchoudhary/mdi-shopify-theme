@@ -14,12 +14,18 @@
         "type": "story-section1",
         "settings": {
         }
+      },
+      "cave": {
+        "type": "story-section2",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
       "header",
-      "content"
+      "content",
+      "cave"
     ]
   }
   
