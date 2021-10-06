@@ -9,11 +9,17 @@
         "type": "header-wines",
         "settings": {
         }
+      },
+      "wine-des": {
+        "type": "wine-section1",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
-      "header"
+      "header",
+      "wine-dis"
     ]
   }
   
