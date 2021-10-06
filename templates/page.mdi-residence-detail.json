@@ -24,6 +24,11 @@
         "type": "residence-detail-section3",
         "settings": {
         }
+      },
+      "acc": {
+        "type": "residence-detail-section4",
+        "settings": {
+        }
       }
     },
     "order": [
@@ -31,7 +36,8 @@
       "header",
       "detail",
       "des",
-      "intro"
+      "intro",
+      "acc"
     ]
   }
   
