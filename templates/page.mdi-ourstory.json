@@ -24,6 +24,11 @@
         "type": "story-section3",
         "settings": {
         }
+      },
+      "team": {
+        "type": "story-section4",
+        "settings": {
+        }
       }
     },
     "order": [
@@ -31,7 +36,8 @@
       "header",
       "content",
       "cave",
-      "state"
+      "state",
+      "team"
     ]
   }
   
