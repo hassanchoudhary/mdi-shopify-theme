@@ -22,9 +22,13 @@ $('.owl-carousel').owlCarousel({
     }
   })
 
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
-  });
+  $(document).ready(function () {
+    (function ($) {
+        $('.owl-carousel').owlCarousel({
+            ...
+        });
+    })(jQuery);
+});
 
 
 
