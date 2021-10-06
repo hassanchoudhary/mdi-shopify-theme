@@ -11,7 +11,12 @@
         }
       },
       "introduction": {
-        "type": "home-section2-introduction",
+        "type": "home-section2",
+        "settings": {
+        }
+      },
+      "ourstory": {
+        "type": "home-section3",
         "settings": {
         }
       }
@@ -19,7 +24,8 @@
     "order": [
       "main",
       "header",
-      "introduction"
+      "introduction",
+      "ourstory"
     ]
   }
   
