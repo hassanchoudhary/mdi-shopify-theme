@@ -78,6 +78,7 @@ Navbar Area CSS
   margin-left: 49%;
   margin-top: 15%;
   margin-bottom: 3%;
+  display: block;
 }
 
 .main-banner-area .arrow:hover {
