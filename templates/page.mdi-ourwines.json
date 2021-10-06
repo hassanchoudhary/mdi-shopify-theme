@@ -14,12 +14,18 @@
         "type": "wine-section1",
         "settings": {
         }
+      },
+      "collection": {
+        "type": "wine-section2",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
       "header",
-      "discription"
+      "discription",
+      "collection"
     ]
   }
   
