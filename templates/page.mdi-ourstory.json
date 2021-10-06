@@ -9,11 +9,17 @@
         "type": "header-story",
         "settings": {
         }
+      },
+      "content": {
+        "type": "story-section1",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
-      "header"
+      "header",
+      "content"
     ]
   }
   
