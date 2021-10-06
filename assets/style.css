@@ -2969,7 +2969,7 @@ All Pages CSS
 
 /*  ######################## CONTACT PAGE CSS ############ */
 .contact-header {
-  background-image: url("../Images/DESKTOP/_HEADER/Contact-Web.jpg");
+  background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Contact-Web.jpg?v=1633528308");
   background-size: cover;
 }
 
@@ -2992,6 +2992,7 @@ All Pages CSS
   transition: border-width 150ms ease-in-out;
   margin-left: 49%;
   margin-top: 20%;
+  display: block;
 }
 
 .contact-header .arrow:hover {
@@ -3135,11 +3136,11 @@ All Pages CSS
 /* Contact Page Mobile Responsive css */
 @media (max-width: 575.98px) {
   .contact-header {
-    background-image: url("../Images/MOBILE/_HEADER/Contact-Mobile.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/CONTACT_1.jpg?v=1633528362");
     height: 500px;
   }
   .contact-header .mbl-nav .overlay {
-    background-image: url("../Images/MOBILE/_HEADER/Contact-Mobile.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/CONTACT_1.jpg?v=1633528362");
   }
   .contact-header .contact-heading {
     padding: 25% 0% 20% 0%;

@@ -1,0 +1,19 @@
+{
+    "sections": {
+      "main": {
+        "type": "nav-menu",
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header-contact",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main",
+      "header"
+    ]
+  }
+  
