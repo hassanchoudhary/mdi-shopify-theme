@@ -24,6 +24,11 @@
         "type": "home-section4",
         "settings": {
         }
+      },
+      "connect": {
+        "type": "home-section5",
+        "settings": {
+        }
       }
     },
     "order": [
