@@ -29,6 +29,11 @@
         "type": "story-section4",
         "settings": {
         }
+      },
+      "enviroment": {
+        "type": "story-section5",
+        "settings": {
+        }
       }
     },
     "order": [
@@ -37,7 +42,8 @@
       "content",
       "cave",
       "state",
-      "team"
+      "team",
+      "enviroment"
     ]
   }
   
