@@ -9,11 +9,17 @@
         "type": "wine-detail-section1",
         "settings": {
         }
+      },
+      "banner": {
+        "type": "wine-detail-section2",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
-      "pdetail"
+      "pdetail",
+      "banner"
     ]
   }
   
