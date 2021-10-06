@@ -1,0 +1,18 @@
+{
+    "sections": {
+      "main": {
+        "type": "nav-menu",
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header-home",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main",
+      "header"
+  }
+  
