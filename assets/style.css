@@ -2286,11 +2286,11 @@ All Pages CSS
 /* Residence Page Mobile responsive Css */
 @media (max-width: 575.98px) {
   .residence-header {
-    background-image: url("../Images/MOBILE/05_RESIDENCES_1/RESIDENCES_1_1.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/RESIDENCES_1_1.jpg?v=1633522554");
     height: 700px;
   }
   .residence-header .mbl-nav .overlay {
-    background-image: url("../Images/MOBILE/05_RESIDENCES_1/RESIDENCES_1_1.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/RESIDENCES_1_1.jpg?v=1633522554");
   }
   .residence-header .arrow {
     height: 5vw;
