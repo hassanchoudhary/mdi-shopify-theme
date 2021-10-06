@@ -14,12 +14,18 @@
         "type": "residence-detail-section1",
         "settings": {
         }
+      },
+      "des": {
+        "type": "residence-detail-section2",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
       "header",
-      "detail"
+      "detail",
+      "des"
     ]
   }
   
