@@ -1,18 +1,13 @@
 {
     "sections": {
       "main": {
-        "type": "test-section",
+        "type": "nav-menu",
         "settings": {
-          "custom_text_title": "Title",
-          "custom_text_body": "<p>Add your text here<\/p>",
-          "background-img": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg"
         }
       },
       "second": {
-        "type": "second-section",
+        "type": "header-home",
         "settings": {
-          "custom_text_body": "<p>jkjhkjhkjhkj<\/p>",
-          "sec_img": "shopify:\/\/shop_images\/retail-shopping-package.jpg"
         }
       }
     },
