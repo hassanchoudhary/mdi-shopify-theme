@@ -24,6 +24,11 @@
         "type": "residence-section3",
         "settings": {
         }
+      },
+      "acco": {
+        "type": "residence-section4",
+        "settings": {
+        }
       }
     },
     "order": [
@@ -31,7 +36,8 @@
       "header",
       "staymas",
       "category",
-      "detail"
+      "detail",
+      "acco"
     ]
   }
   
