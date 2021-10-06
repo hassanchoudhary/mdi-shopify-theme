@@ -119,6 +119,49 @@
     {%- endif -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+ 
+    <!---MDI LINKS-->
+ 
+     <!-- Bootstrap CSS -->
+     {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+
+     <!-- Owl Default CSS -->
+     {{ 'owl.theme.default.min.css' | asset_url | stylesheet_tag }}
+     <!-- Owl Carousel CSS -->
+     {{ 'owl.carousel.min.css' | asset_url | stylesheet_tag }}
+     <!-- Style CSS -->
+     <link rel="stylesheet" href="assets/css/style.css">
+     {{ 'style.css' | asset_url | stylesheet_tag }}
+     <!-- Responsive CSS
+     <link rel="stylesheet" href="assets/css/responsive.css" />-->
+
+     <title>MDI Page Templates</title>
+     <script>
+     function openNav() {
+         document.getElementById("myNav").style.width = "100%";
+     }
+     function closeNav() {
+         document.getElementById("myNav").style.width = "0%";
+     }
+     </script>
+     <script>
+     function openSearch() {
+         document.getElementById("mySearch").style.width = "100%";
+     }
+     function closeSearch() {
+         document.getElementById("mySearch").style.width = "0%";
+     }
+     </script>
+     <script>
+     function openDeskSearch() {
+         document.getElementById("deskSearch").style.width = "100%";
+     }
+     function closeDeskSearch() {
+         document.getElementById("deskSearch").style.width = "0%";
+     }
+     </script>
+
+
   </head>
 
   <body class="gradient">
@@ -127,7 +170,6 @@
     </a>
 
     <!---MDI LINKS-->
-    {% section 'header-link' %}
 
     {% section 'announcement-bar' %}
 
@@ -135,7 +177,7 @@
       {{ content_for_layout }}
     </main>
 
-    {% section 'footer-scripts' %}
+
     {% section 'footer-mdi' %}
 
     <ul hidden>
@@ -169,5 +211,27 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <!---MDI Scripts--->
+
+    <!-- Bootstrap JS -->
+    {{ 'bootstrap.bundle.min.js' | asset_url | script_tag }}
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/952ec9e3b8.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    {{ 'owl.carousel.min.js' | asset_url | script_tag }}
+
+    <!-- Wines Page JS -->
+    {{ 'wine.js' | asset_url | script_tag }}
+
+    <!-- Custom JS shared by all pages -->
+    {{ 'custom.js' | asset_url | script_tag }}
+
+
   </body>
 </html>
