@@ -19,13 +19,19 @@
         "type": "residence-detail-section2",
         "settings": {
         }
+      },
+      "intro": {
+        "type": "residence-detail-section3",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
       "header",
       "detail",
-      "des"
+      "des",
+      "intro"
     ]
   }
   
