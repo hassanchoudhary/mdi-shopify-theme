@@ -1,25 +1,24 @@
 {
-    "sections": {
-      "main": {
-        "type": "nav-menu",
-        "settings": {
-        }
-      },
-      "header": {
-        "type": "header-wines",
-        "settings": {
-        }
-      },
-      "description": {
-        "type": "wine-section1",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "nav-menu",
+      "settings": {
       }
     },
-    "order": [
-      "main",
-      "header",
-      "discription"
-    ]
-  }
-  
+    "header": {
+      "type": "header-wines",
+      "settings": {
+      }
+    },
+    "description": {
+      "type": "wine-section1",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "header",
+    "description"
+  ]
+}

@@ -1,43 +1,42 @@
 {
-    "sections": {
-      "main": {
-        "type": "nav-menu",
-        "settings": {
-        }
-      },
-      "header": {
-        "type": "header-home",
-        "settings": {
-        }
-      },
-      "introduction": {
-        "type": "home-section2",
-        "settings": {
-        }
-      },
-      "ourstory": {
-        "type": "home-section3",
-        "settings": {
-        }
-      },
-      "ourresidence": {
-        "type": "home-section4",
-        "settings": {
-        }
-      },
-      "connect": {
-        "type": "home-section5",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "nav-menu",
+      "settings": {
       }
     },
-    "order": [
-      "main",
-      "header",
-      "introduction",
-      "ourstory",
-      "ourresidence",
-      "connect"
-    ]
-  }
-  
+    "header": {
+      "type": "header-home",
+      "settings": {
+      }
+    },
+    "introduction": {
+      "type": "home-section2",
+      "settings": {
+      }
+    },
+    "ourstory": {
+      "type": "home-section3",
+      "settings": {
+      }
+    },
+    "ourresidence": {
+      "type": "home-section4",
+      "settings": {
+      }
+    },
+    "connect": {
+      "type": "home-section5",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "header",
+    "introduction",
+    "ourstory",
+    "ourresidence",
+    "connect"
+  ]
+}
