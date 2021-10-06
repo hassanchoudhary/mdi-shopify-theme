@@ -1583,11 +1583,11 @@ All Pages CSS
     display: none;
   }
   .story-header {
-    background-image: url("../Images/MOBILE/04_STORY/STORY_1.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_1.jpg?v=1633520046");
     height: 700px;
   }
   .story-header .mbl-nav .overlay {
-    background-image: url("../Images/MOBILE/04_STORY/STORY_1.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_1.jpg?v=1633520046");
   }
   .story-header .arrow {
     height: 5vw;
