@@ -1,11 +1,6 @@
 {
     "sections": {
       "main": {
-        "type": "nav-menu",
-        "settings": {
-        }
-      },
-      "header": {
         "type": "header-wine-detail",
         "settings": {
         }
