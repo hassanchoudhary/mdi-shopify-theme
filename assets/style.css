@@ -1156,7 +1156,7 @@ All Pages CSS
 
 /*  ######################## Story PAGE CSS ############ */
 .story-header {
-  background-image: url("../Images/DESKTOP/_HEADER/Story-Web.jpg");
+  background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Story-Web.jpg?v=1633516494");
   background-size: cover;
 }
 
@@ -1761,7 +1761,7 @@ All Pages CSS
 
 /*  ######################## Wines PAGE CSS ############ */
 .wine-header {
-  background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/WINES_1.jpg?v=1633507602");
+  background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Wines-Web.jpg?v=1633516545");
   background-size: cover;
   /* Scroll arrow css */
 }
@@ -1938,11 +1938,11 @@ All Pages CSS
 /* Wine Page Mobile Responsive CSs */
 @media (max-width: 575.98px) {
   .wine-header {
-    background-image: url("../Images/MOBILE/02_WINES/WINES_1.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/WINES_1_3ee8e3fb-1d29-4ef5-bef9-ffa5ccfaf243.jpg?v=1633516175");
     height: 700px;
   }
   .wine-header .mbl-nav .overlay {
-    background-image: url("../Images/MOBILE/02_WINES/WINES_1.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/WINES_1_3ee8e3fb-1d29-4ef5-bef9-ffa5ccfaf243.jpg?v=1633516175");
   }
   .wine-header h2 {
     font-size: 28px;
