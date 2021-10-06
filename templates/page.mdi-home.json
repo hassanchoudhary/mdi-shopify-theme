@@ -1,19 +1,19 @@
 {
     "sections": {
       "main": {
-        "type": "nav-menu",
+        "type": "header-home",
         "settings": {
         }
       },
-      "second": {
-        "type": "header-home",
+      "nav": {
+        "type": "nav-menu",
         "settings": {
         }
       }
     },
     "order": [
       "main",
-      "second"
+      "nav"
     ]
   }
   
