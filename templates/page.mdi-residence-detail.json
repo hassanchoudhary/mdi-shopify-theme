@@ -9,11 +9,17 @@
         "type": "header-residence-detail",
         "settings": {
         }
+      },
+      "detail": {
+        "type": "residence-detail-section1",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
-      "header"
+      "header",
+      "detail"
     ]
   }
   
