@@ -4,6 +4,11 @@
         "type": "header-wine-detail",
         "settings": {
         }
+      },
+      "header": {
+        "type": "header-wine-detail",
+        "settings": {
+        }
       }
     },
     "order": [
