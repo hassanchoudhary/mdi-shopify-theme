@@ -1,12 +1,12 @@
 {
     "sections": {
       "main": {
-        "type": "header-home",
+        "type": "nav-menu",
         "settings": {
         }
       },
       "nav": {
-        "type": "nav-menu",
+        "type": "header-home",
         "settings": {
         }
       }
