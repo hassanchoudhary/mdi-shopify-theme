@@ -19,13 +19,19 @@
         "type": "residence-section2",
         "settings": {
         }
+      },
+      "detail": {
+        "type": "residence-section3",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
       "header",
       "staymas",
-      "category"
+      "category",
+      "detail"
     ]
   }
   
