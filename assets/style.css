@@ -22,17 +22,20 @@ Default CSS
 =================================================*/
 @font-face {
   font-family: "lovato";
-  src: url("../fonts/Lovato-Regular.otf");
+  src: url({{ "Lovato-Regular.otf" | asset_url }});
 }
 
 @font-face {
   font-family: "LyonText";
-  src: url("../fonts/Lyon Text-Regular.otf"), url("../fonts/Lyon Text-Regular Italic.otf");
+  src: url({{ "Text-Regular.otf" | asset_url }}),
+       url({{ "Italic.otf" | asset_url }});
 }
 
 @font-face {
   font-family: "P22Underground";
-  src: url("../fonts/P22UndergroundPro-Demi.otf"), url("../fonts/P22UndergroundPro-Heavy.otf"), url("../fonts/P22UndergroundPro-Medium.otf");
+  src: url({{ "P22UndergroundPro-Demi.otf" | asset_url }}),
+       url({{ "P22UndergroundPro-Heavy.otf" | asset_url }}),
+       url({{ "P22UndergroundPro-Medium.otf" | asset_url }});
 }
 
 .container {
