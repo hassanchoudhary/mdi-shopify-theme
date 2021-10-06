@@ -19,13 +19,19 @@
         "type": "home-section3",
         "settings": {
         }
+      },
+      "ourresidence": {
+        "type": "home-section4",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
       "header",
       "introduction",
-      "ourstory"
+      "ourstory",
+      "ourresidence"
     ]
   }
   
