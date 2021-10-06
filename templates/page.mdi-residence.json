@@ -14,12 +14,18 @@
         "type": "residence-section1",
         "settings": {
         }
+      },
+      "category": {
+        "type": "residence-section2",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
       "header",
-      "staymas"
+      "staymas",
+      "category"
     ]
   }
   
