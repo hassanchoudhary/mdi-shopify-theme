@@ -5,15 +5,15 @@
         "settings": {
         }
       },
-      "header": {
-        "type": "header-wine-detail",
+      "pdetail": {
+        "type": "wine-detail-section1",
         "settings": {
         }
       }
     },
     "order": [
       "main",
-      "header"
+      "pdetail"
     ]
   }
   
