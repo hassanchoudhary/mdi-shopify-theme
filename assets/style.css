@@ -1179,6 +1179,7 @@ All Pages CSS
   transition: border-width 150ms ease-in-out;
   margin-left: 49%;
   margin-top: 20%;
+  display: block;
 }
 
 .story-header .arrow:hover {
