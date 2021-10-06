@@ -214,6 +214,18 @@
 
     <!---MDI Scripts--->
 
+<script>
+  $(document).ready(function () {
+    (function ($) {
+        $('.owl-carousel').owlCarousel({
+            ...
+        });
+    })(jQuery);
+});
+</script>
+
+
+
     <!-- Bootstrap JS -->
     {{ 'bootstrap.bundle.min.js' | asset_url | script_tag }}
 
