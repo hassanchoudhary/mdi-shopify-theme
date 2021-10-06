@@ -9,11 +9,17 @@
         "type": "header-residence",
         "settings": {
         }
+      },
+      "staymas": {
+        "type": "residence-section1",
+        "settings": {
+        }
       }
     },
     "order": [
       "main",
-      "header"
+      "header",
+      "staymas"
     ]
   }
   
