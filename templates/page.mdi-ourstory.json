@@ -1,49 +1,51 @@
 {
-    "sections": {
-      "main": {
-        "type": "nav-menu",
-        "settings": {
-        }
-      },
-      "header": {
-        "type": "header-story",
-        "settings": {
-        }
-      },
-      "content": {
-        "type": "story-section1",
-        "settings": {
-        }
-      },
-      "cave": {
-        "type": "story-section2",
-        "settings": {
-        }
-      },
-      "state": {
-        "type": "story-section3",
-        "settings": {
-        }
-      },
-      "team": {
-        "type": "story-section4",
-        "settings": {
-        }
-      },
-      "enviroment": {
-        "type": "story-section5",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "nav-menu",
+      "settings": {
       }
     },
-    "order": [
-      "main",
-      "header",
-      "content",
-      "cave",
-      "state",
-      "team",
-      "enviroment"
-    ]
-  }
-  
+    "header": {
+      "type": "header-story",
+      "settings": {
+        "header_background": "shopify:\/\/shop_images\/Story-Web.jpg",
+        "small_title": "INTRODUCTION",
+        "text_title": "OUR WINES"
+      }
+    },
+    "content": {
+      "type": "story-section1",
+      "settings": {
+      }
+    },
+    "cave": {
+      "type": "story-section2",
+      "settings": {
+      }
+    },
+    "state": {
+      "type": "story-section3",
+      "settings": {
+      }
+    },
+    "team": {
+      "type": "story-section4",
+      "settings": {
+      }
+    },
+    "enviroment": {
+      "type": "story-section5",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "header",
+    "content",
+    "cave",
+    "state",
+    "team",
+    "enviroment"
+  ]
+}
