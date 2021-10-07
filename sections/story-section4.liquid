@@ -3,72 +3,47 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <center><span>{{ section.settings.small_title }}</span></center>
-                <h2>{{ section.settings.title_text }}</h2>
+                <center><span>OUR STORY</span></center>
+                <h2>MEET THE TEAM</h2>
                 <!--Team Carousel-->
                 <div class="owl-carousel mt-5">
-                    
-                    {% for block in section.blocks %}
                     <div class="team-card">
-                        <img src="{{ block.settings.img | img_url: 'master' }}" alt="">
-                        <h3>{{ block.settings.title}}</h3>
-                        <p>{{ block.settings.text_body}}</p>
+                        <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/TEAM_1.jpg?v=1633519403" alt="">
+                        <h3>Fabian Lacassaigne</h3>
+                        <p>Grandson of a winegrower in the Bordeaux region, I spent my youth near Sauternes, where
+                            the passion for wine appeared to me. I’ve started studies in viticulture and oenology
+                            which enabled me to obtain my first job as a
+                            cellar master in the Entre-deux-Mers appellation. This experience allowed me to start
+                            working in the prestigious Pessac-Leognan appellation at Château Luchey-Halde.</p>
                     </div>
-                
-                    {% endfor %}
+                    <div class="team-card">
+                        <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/TEAM_2.jpg?v=1633519418" alt="">
+                        <h3>Thomas Camilleri</h3>
+                        <p>Thomas is a sommelier graduated from the university of wine of Suze-la-Rousse. He is a
+                            real wine and gastronomy enthusiast especially regarding the product of his native
+                            region, the
+                            southern rhône valley. He has been working in a french gourmet market in Los Angeles and
+                            was the wine tourism manager of another winery on the appellation Luberon.</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/TEAM_3.jpg?v=1633519436" alt="">
+                        <h3>Melanie de Rudder</h3>
+                        <p>Born in Avignon, I grew up in the capital of the Côtes du Rhône, amazed by the varied
+                            landscapes and valleys of the surrounding vineyards. After studies in Biology (where I
+                            discovered the protection of the vine) and a business school, I immediately went into a
+                            profession of passion. 17 years as sales manager in important wine estates have allowed
+                            me to develop my
+                            knowledge of wines and in particular the various appellations and crus of the southern
+                            Rhône Valley which I especially love.
+                            I then took a big step forward, by creating my own company ... to select and support
+                            various
+                            talented winegrowers in their business development and to offer buyers unique and
+                            quality
+                            wines.</p>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-{% schema %}
-{
-  "name": "Story Section4 (Team)",
-  "max_blocks": 10,
-  "settings": [
-  {
-      "id": "small_title",
-      "type": "text",
-      "label": "Small Text",
-      "default": "OUR STORY"
-  },
-  {
-      "id": "text_title",
-      "type": "text",
-      "label": "Heading",
-      "default": "MEET THE TEAM"
-  }
-  ],
-  "blocks": [
-  {
-      "type": "text",
-      "name": "Team Member",
-      "settings": [
-      {
-          "id": "title",
-          "type": "text",
-          "label": "Title Name",
-      },
-      {
-          "id": "img",
-          "type": "image_picker",
-          "label": "Image"
-      },
-      {
-          "id": "text_body",
-          "type": "richtext",
-          "label": "About"
-      }
-      ]
-  }
-  ],
-  "presets": [
-      {
-          "name": "Story Section4 Team",
-          "category": "custom section"
-      }
-]
-}
-{% endschema %}
