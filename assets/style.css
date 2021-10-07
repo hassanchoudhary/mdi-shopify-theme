@@ -382,6 +382,10 @@ All Pages CSS
   border-left: 1px solid #aea79e;
   display: block;
 }
+.line-right {
+  border-left: 1px solid #aea79e;
+  display: block;
+}
 
 .vl {
   border-left: 1px solid #aea79e;
@@ -1966,6 +1970,9 @@ All Pages CSS
     display: none;
   }
   .line-left {
+    display: block;
+  }
+  .line-right {
     display: block;
   }
   .wine-dis-section {
