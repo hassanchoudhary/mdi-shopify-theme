@@ -1,8 +1,8 @@
-<div class="main-banner-area222 story-header">
+<div class="main-banner-area222 story-header" style="background-image: url({{ section.settings.header_background | img_url: 'master' }});">
     <div class="row story-heading">
         <div class="col text-center">
-            <span>INTRODUCTION</span>
-            <h2>OUR STORY</h2>
+            <span>{{ section.settings.small_title }}</span>
+            <h2>{{ section.settings.text_title }}</h2>
             <div class="arrow-down">
                 <a data-scroll href="#section2">
                     <div class="arrow"></div>
@@ -11,3 +11,35 @@
         </div>
     </div>
 </div>
+
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+        "id": "header_background",
+        "type": "image_picker",
+        "label": "Background Image"
+    }
+    {
+        "id": "small_title",
+        "type": "text",
+        "label": "Small Text",
+        "default": "INTRODUCTION"
+      },
+      {
+        "id": "text_title",
+        "type": "text",
+        "label": "Heading",
+        "default": "OUR WINES"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Story Header",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
