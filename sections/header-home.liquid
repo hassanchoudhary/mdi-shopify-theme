@@ -2,7 +2,7 @@
     <div class="main-banner-bg">
         <div class="row">
             <div class="col text-center">
-                <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/MAS_DES_INF_LOGO.png?v=1633494810">
+                <img src="{{ block.settings.logo | img_url: 'master' }}">
 
                 <div class="arrow-down">
                     <a data-scroll href="#section2">
@@ -14,3 +14,24 @@
         </div>
     </div>
 </div>
+
+
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+        "id": "logo",
+        "type": "image_picker",
+        "label": "Logo"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Header",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
