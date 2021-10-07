@@ -723,12 +723,13 @@ All Pages CSS
 }
 
 .our-residence-section .numbrs p {
-  margin-left: 2%;
+  margin-left: 0%;
   margin-right: 0%;
   font-size: 16px;
   font-family: LyonText;
   font-style: italic;
   color: #000;
+  width: 47%;
 }
 
 .our-residence-section .numbrs span {
