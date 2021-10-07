@@ -52,7 +52,7 @@ Navbar Area CSS
 }
 
 .main-banner-area {
-  background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Home-Web.jpg?v=1633495687");
+  background-image: url("{{ section.settings.logo | img_url: 'master' }}");
   background-size: cover;
   background-position: bottom;
   /* Scroll arrow css */
