@@ -8,6 +8,7 @@
     "header": {
       "type": "header-home",
       "settings": {
+        "logo": "shopify:\/\/shop_images\/MAS_DES_INF_LOGO.png"
       }
     },
     "introduction": {
