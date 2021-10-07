@@ -5,12 +5,9 @@
         <div class="row">
             <div style="display: block;" class="vl mt-5 mbl-hide"></div>
             <div class="heading">
-                <center><span>OUR STORY</span></center>
-                <h2>THE ESTATE</h2>
-                <p class="es-des mbl-hide">The Mas des Infermières estate is a mythical and private place; a vast,
-                    rambling and rich land where exceptional wines are created under the warmth of the Provençal
-                    sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played
-                    out over long hot summers.</p>
+                <center><span>{{ section.settings.small_title }}</span></center>
+                <h2>{{ section.settings.title_text }}</h2>
+                <p class="es-des mbl-hide">{{ section.settings.text_body }}</p>
             </div>
         </div>
         <div class="row">
@@ -18,15 +15,11 @@
 
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
             <div class="carousel-inner">
+                {% for block in section.blocks %}
                 <div class="carousel-item active">
-                <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_9.jpg?v=1633518777" class="d-block w-100" alt="...">
+                <img src="{{ block.settings.img | img_url: 'master' }}" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_9.jpg?v=1633518777" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_9.jpg?v=1633518777" class="d-block w-100" alt="...">
-                </div>
+                {% endfor %}
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -41,30 +34,100 @@
         </div>
         <div class="row">
             <div class="col">
-                <p class="slide-dis">This extraordinary “Arts” house is perfect for a big family or a group of
-                    friends. It has a separate apartment with kitchen and private entrance and terrace.</p>
-                <p class="es-des desk-hide">The Mas des Infermières estate is a mythical and private place; a vast,
-                    rambling and rich land where exceptional wines are created under the warmth of the Provençal
-                    sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played
-                    out over long hot summers.</p>
+                <p class="slide-dis">{{ section.settings.slider_des }}</p>
+                <p class="es-des desk-hide">{{ section.settings.mbl_content }}</p>
             </div>
             <div style="display: block;" class="col line-left mbl-hide"></div>
         </div>
         <div class="row">
             <div style="display: block;" class="col"></div>
             <div class="col line-left">
-                <img class="estateintro-img1" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Our_Story_5.png?v=1633518860" alt="">
+                <img class="estateintro-img1" src="{{ section.settings.right_img | img_url: 'master' }}" alt="">
             </div>
-            <img class="estateintro-img1 desk-hide" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Our_Story_5.png?v=1633518860" alt="">
+            <img class="estateintro-img1 desk-hide" src="{{ section.settings.right_img | img_url: 'master' }}" alt="">
         </div>
         <div class="row estate-intro">
             <div class="col pb-5">
-                <p>The silence and sunshine are a sanctuary from
-                    my profession. I love
-                    to come here and paint, read, write and, hopefully, improve my corner of Provence.</p>
-                <h5>RIDLEY SCOTT</h5>
+                <p>{{ section.settings.intro_body }}</p>
+                <h5>{{ section.settings.intro_author }}</h5>
             </div>
             <div class="col line-left"></div>
         </div>
     </div>
 </section>
+
+
+
+{% schema %}
+{
+  "name": "story section3 Estate",
+  "settings": [
+    {
+        "id": "small_title",
+        "type": "text",
+        "label": "Small Text",
+        "default": "OUR STORY"
+    },
+    {
+        "id": "text_title",
+        "type": "text",
+        "label": "Heading",
+        "default": "THE ESTATE"
+    },
+    {
+        "id": "text_body",
+        "type": "text",
+        "label": "Add Description",
+        "default": "The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers."
+    },
+    {
+        "id": "slider_des",
+        "type": "text",
+        "label": "Add slider Description",
+        "default": "This extraordinary “Arts” house is perfect for a big family or a group of friends. It has a separate apartment with kitchen and private entrance and terrace."
+    },
+    {
+        "id": "mbl_content",
+        "type": "text",
+        "label": "Add Mobile Content",
+        "default": "The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers."
+    },
+    {
+        "id": "right_img",
+        "type": "image_picker",
+        "label": "right column Image"
+    },
+    {
+        "id": "intro_body",
+        "type": "richtext",
+        "label": "Add Detail",
+        "default": "<p>THE SILENCE AND SUNSHINE ARE A SANCTUARY FROM MY PROFESSION. I LOVE TO COME HERE AND PAINT, READ, WRITE AND, HOPEFULLY, IMPROVE MY CORNER OF PROVENCE.</p>"
+    },
+    {
+        "id": "intro_author",
+        "type": "text",
+        "label": "Add Author",
+        "default": "RIDLEY SCOTT"
+    }
+  ],
+  "blocks": [
+  {
+      "type": "text",
+      "name": "slider Image",
+      "settings": [
+      {
+          "id": "img",
+          "type": "image_picker",
+          "label": "Image"
+      }
+      ]
+  }
+  ],
+  "presets": [
+    {
+      "name": "Story Section3 estate",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
