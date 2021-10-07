@@ -34,7 +34,36 @@
     },
     "cave": {
       "type": "story-section2",
+      "blocks": {
+        "d79dbb34-23de-40f1-a102-bdf28caed5e1": {
+          "type": "text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/STORY_4.jpg"
+          }
+        },
+        "d22e335b-e399-4832-acc1-ff4d553ee093": {
+          "type": "text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/STORY_4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "d79dbb34-23de-40f1-a102-bdf28caed5e1",
+        "d22e335b-e399-4832-acc1-ff4d553ee093"
+      ],
       "settings": {
+        "small_title": "OUR STORY",
+        "text_title": "CAVE & VINEYARD",
+        "text_body": "The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers.",
+        "slider_des": "This extraordinary “Arts” house is perfect for a big family or a group of friends. It has a separate apartment with kitchen and private entrance and terrace.",
+        "mbl_content": "The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers.",
+        "link_text": "EXPLORE",
+        "link": "",
+        "intro_body": "<p>THE SILENCE AND SUNSHINE ARE A SANCTUARY FROM MY PROFESSION. I LOVE TO COME HERE AND PAINT, READ, WRITE AND, HOPEFULLY, IMPROVE MY CORNER OF PROVENCE.<\/p>",
+        "intro_author": "RIDLEY SCOTT",
+        "point_one": "The Provence air is lightly fragranced with lavendar and bay",
+        "point_two": "Syrah and Granache grapes are grown around the estate"
       }
     },
     "state": {
