@@ -382,10 +382,6 @@ All Pages CSS
   border-left: 1px solid #aea79e;
   display: block;
 }
-.line-right {
-  border-right: 1px solid #aea79e;
-  display: block;
-}
 
 .vl {
   border-left: 1px solid #aea79e;
@@ -480,6 +476,8 @@ All Pages CSS
 .introduction-section img {
   width: 591px;
   height: 160px;
+  margin-left: 16%;
+  margin-top: 5%;
 }
 
 .introduction-section .numbrs {
