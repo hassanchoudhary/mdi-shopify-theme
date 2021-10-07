@@ -5,49 +5,131 @@
             <div class="col text-center">
                 <div class="vl"></div>
                 <div class="heading">
-                    <span>INTRODUCTION</span>
-                    <h2>OUR WINES</h2>
-                    <img class="img-intro3" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/HOME_2.jpg?v=1633500067" alt="">
-                    <p>The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich
-                        land where exceptional wines are created under the warmth of the Provençal sun. Since 1992
-                        the Scott family have come here to paint, to read and to enjoy the life, played out over
-                        long hot summers.</p>
-                    <a href="Wines.php"><u>EXPLORE</u></a>
+                    <span>{{ section.settings.small_title }}</span>
+                    <h2>{{ section.settings.text_title }}</h2>
+                    <img class="img-intro3" src="{{ section.settings.mbl_right | img_url: 'master' }}" alt="">
+                    <p>{{ section.settings.text_body }}</p>
+                    <a href="{{ section.settings.link }}"><u>{{ section.settings.link_text }}</u></a>
                 </div>
             </div>
         </div>
         <div class="row mt-5">
             <div class="col text-center">
-                <img class="img-intro1" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Home_1.png?v=1633500067" alt="">
+                <img class="img-intro1" src="{{ section.settings.left_img | img_url: 'master' }}" alt="">
             </div>
             <div class="col line-left">
-                <img class="img-intro2" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/HOME_2.jpg?v=1633500067" alt="">
+                <img class="img-intro2" src="{{ section.settings.right_img | img_url: 'master' }}" alt="">
                 <span class="img-count">01</span>
             </div>
         </div>
         <div class="row">
-            <img class="img-intro4" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/HOME_4.jpg?v=1633500067" alt="">
-            <img class="img-intro5" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/HOME_4.jpg?v=1633500067" alt="">
+            <img class="img-intro4" src="{{ section.settings.row_img | img_url: 'master' }}" alt="">
+            <img class="img-intro5" src="{{ section.settings.mbl_row_img | img_url: 'master' }}" alt="">
             <span class="img-count">02</span>
         </div>
         <div class="row mt-4">
             <div style="display:block" class="col-md-7"></div>
             <div class="col-md-5 col-sm-3">
-                <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Home_2.png?v=1633500809" alt="">
+                <img src="{{ section.settings.right_row_img | img_url: 'master' }}" alt="">
             </div>
         </div>
         <div class="row mt-5">
             <div class="col numbrs">
                 <span>01</span>
-                <p>The Provence air is lightly<br> fragranced with lavendar and bay</p>
+                <p>{{ section.settings.point_one }}</p>
             </div>
         </div>
         <div class="row">
             <div class="col numbrs">
                 <span>02</span>
-                <p>Syrah and Granache grapes are<br> grown around the estate</p>
+                <p>{{ section.settings.point_two }}</p>
             </div>
         </div>
     </div>
 </section>
 <!-- Section Two Introduction End-->
+
+
+
+{% schema %}
+{
+  "name": "Home Section (Our Wines)",
+  "settings": [
+  {
+    "id": "small_title",
+    "type": "text",
+    "label": "Small Text",
+    "default": "INTRODUCTION"
+  },
+  {
+    "id": "text_title",
+    "type": "text",
+    "label": "Heading",
+    "default": "OUR WINES"
+  },
+  {
+    "id": "text_body",
+    "type": "richtext",
+    "label": "Add Description",
+    "default": "<p>The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers.</p>"
+  },
+  {
+    "id": "link_text",
+    "type": "text",
+    "label": "Link Text"
+    },
+    {
+        "id": "link",
+        "type": "url",
+        "label": "Text Link"
+    },
+  {
+        "id": "left_img",
+        "type": "image_picker",
+        "label": "Left Image"
+    },
+    {
+        "id": "right_img",
+        "type": "image_picker",
+        "label": "Right Image"
+    },
+    {
+        "id": "mbl_right",
+        "type": "image_picker",
+        "label": "Right Image Mobile"
+    },
+    {
+        "id": "row_img",
+        "type": "image_picker",
+        "label": "Left Row Image"
+    },
+    {
+        "id": "mbl_row_img",
+        "type": "image_picker",
+        "label": "Left Row Mobile Image"
+    },
+    {
+        "id": "right_row_img",
+        "type": "image_picker",
+        "label": "Right Row Image"
+    },
+    {
+        "id": "point_one",
+        "type": "text",
+        "label": "Number One Text",
+        "default": "The Provence air is lightly fragranced with lavendar and bay"
+    },
+    {
+        "id": "point_two",
+        "type": "text",
+        "label": "Syrah and Granache grapes are grown around the estate"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Section2 Wines",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
