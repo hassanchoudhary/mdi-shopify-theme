@@ -34,13 +34,17 @@
       "type": "home-section3",
       "settings": {
         "background-img": "shopify:\/\/shop_images\/HOME_6.jpg",
+        "mbl-img1": "shopify:\/\/shop_images\/HOME_6_6fb7e954-97f8-4db4-ae86-d493613ead66.jpg",
         "small_title": "INTRODUCTION",
         "title_text": "OUR STORY",
         "text_body": "<p>The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers.<\/p>",
         "link_text": "EXPLORE",
         "link": "",
+        "right_img": "shopify:\/\/shop_images\/HOME76.jpg",
+        "mbl-img2": "shopify:\/\/shop_images\/MAS_DES_INF_HOME.jpg",
         "point_one": "The Provence air is lightly fragranced with lavendar and bay",
         "point_two": "Syrah and Granache grapes are grown around the estate",
+        "left_img": "shopify:\/\/shop_images\/Home_3.png",
         "intro_body": "<p>THE SILENCE AND SUNSHINE ARE A SANCTUARY FROM MY PROFESSION. I LOVE TO COME HERE AND PAINT, READ, WRITE AND, HOPEFULLY, IMPROVE MY CORNER OF PROVENCE.<\/p>",
         "intro_author": "RIDLEY SCOTT"
       }
