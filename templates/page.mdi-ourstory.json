@@ -122,11 +122,20 @@
             "img": "shopify:\/\/shop_images\/TEAM_2.jpg",
             "text_body": "<p>Thomas is a sommelier graduated from the university of wine of Suze-la-Rousse. He is a real wine and gastronomy enthusiast especially regarding the product of his native  region, the  southern rhône valley. He has been working in a french gourmet market in Los Angeles and  was the wine tourism manager of another winery on the appellation Luberon.<\/p>"
           }
+        },
+        "b442e48f-3d19-479a-9bc5-03d58a1bfbc3": {
+          "type": "text",
+          "settings": {
+            "title": "Melanie de Rudder",
+            "img": "shopify:\/\/shop_images\/TEAM_3.jpg",
+            "text_body": "<p>Born in Avignon, I grew up in the capital of the Côtes du Rhône, amazed by the varied landscapes and valleys of the surrounding vineyards. After studies in Biology (where I discovered the protection of the vine) and a business school, I immediately went into a profession of passion. 17 years as sales manager in important wine estates have allowed me to develop my knowledge of wines and in particular the various appellations and crus of the southern Rhône Valley which I especially love. I then took a big step forward, by creating my own company ... to select and support various talented winegrowers in their business development and to offer buyers unique and quality wines.<\/p>"
+          }
         }
       },
       "block_order": [
         "035c835b-2b4d-44a2-9ef3-04da4ae7cd37",
-        "e7a490c5-454b-4f82-a7ac-5ab0cde72880"
+        "e7a490c5-454b-4f82-a7ac-5ab0cde72880",
+        "b442e48f-3d19-479a-9bc5-03d58a1bfbc3"
       ],
       "settings": {
         "small_title": "OUR STORY",
