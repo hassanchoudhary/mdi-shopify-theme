@@ -938,6 +938,7 @@ All Pages CSS
     width: 282px;
     height: 88px;
     float: right;
+    display: block;
   }
   .ourstory-section {
     display: none;
