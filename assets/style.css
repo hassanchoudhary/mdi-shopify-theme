@@ -517,7 +517,7 @@ All Pages CSS
 }
 
 .ourstory-section {
-  background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/HOME_6.jpg?v=1633502691");
+ /* background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/HOME_6.jpg?v=1633502691"); */
   background-size: cover;
   padding: 190px 0px 190px 0px;
 }
@@ -595,7 +595,7 @@ All Pages CSS
   font-family: LyonText;
   font-style: italic;
   color: #000;
-  margin-left: 20px;
+  width: 47%;
 }
 
 .story-content .numbrs span {
