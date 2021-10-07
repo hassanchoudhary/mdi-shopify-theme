@@ -1587,7 +1587,10 @@ All Pages CSS
 /* Story page responsive mobile css */
 @media (max-width: 575.98px) {
   .story-vl {
-    display: none;
+    display: none !important;
+  }
+  .line-left {
+    display: none !important;
   }
   .story-header {
     background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_1.jpg?v=1633520046");
