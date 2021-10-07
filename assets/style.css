@@ -383,7 +383,7 @@ All Pages CSS
   display: block;
 }
 .line-right {
-  border-left: 1px solid #aea79e;
+  border-right: 1px solid #aea79e;
   display: block;
 }
 
