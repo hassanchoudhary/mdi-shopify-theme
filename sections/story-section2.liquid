@@ -5,12 +5,9 @@
             <div class="col">
                 <div style="display: block;" class="story-vl mbl-hide"></div>
                 <div class="heading">
-                    <center> <span>OUR STORY</span></center>
-                    <h2>CAVE & VINEYARD</h2>
-                    <p class="cave-des mbl-hide">The Mas des Infermières estate is a mythical and private place; a
-                        vast, rambling and rich land where exceptional wines are created under the warmth of the
-                        Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the
-                        life, played out over long hot summers.</p>
+                    <center> <span>{{ section.settings.small_title }}</span></center>
+                    <h2>{{ section.settings.title_text }}</h2>
+                    <p class="cave-des mbl-hide">{{ section.settings.text_body }}</p>
                 </div>
             </div>
         </div>
@@ -20,15 +17,11 @@
         <div class="col">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
+                    {% for block in section.blocks %}
                     <div class="carousel-item active">
-                        <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_4.jpg?v=1633517352" class="d-block w-100" alt="...">
+                        <img src="{{ block.settings.img | img_url: 'master' }}" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_4.jpg?v=1633517352" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_4.jpg?v=1633517352" class="d-block w-100" alt="...">
-                    </div>
+                    {% endfor %}
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -46,56 +39,50 @@
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <p class="slider-dis">
-                    This extraordinary “Arts” house is perfect for a big family or a group of friends. It has a
-                    separate apartment with kitchen and private entrance and terrace.
+                    {{ section.settings.slider_dis }}
                 </p>
-                <p class="cave-des desk-hide">The Mas des Infermières estate is a mythical and private place; a
-                    vast, rambling and rich land where exceptional wines are created under the warmth of the
-                    Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the
-                    life, played out over long hot summers.</p>
-                <center><a class="desk-hide mt-5" href=""><u>EXPLORE</u></a></center>
+                <p class="cave-des desk-hide">{{ section.settings.mbl_content }}</p>
+                <center><a class="desk-hide mt-5" href="{{ section.settings.link }}"><u>{{ section.settings.link_text }}</u></a></center>
             </div>
             <div style="display: block;" class="col-md-6 line-left mbl-hide"></div>
         </div>
         <div class="row cave-intro">
             <div class="col-md-6 col-sm-12">
-                <img class="caveintro-img1" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Our_Story_3.png?v=1633517504" alt="">
+                <img class="caveintro-img1" src="{{ section.settings.left_img | img_url: 'master' }}" alt="">
             </div>
             <div class="col mbl-hide line pb-5">
-                <p>The silence and sunshine are a sanctuary from
-                    my profession. I love
-                    to come here and paint, read, write and, hopefully, improve my corner of Provence.</p>
-                <h5>RIDLEY SCOTT</h5>
-                <img class="caveintro-img2" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_6.jpg?v=1633517548" alt="">
+                <p>{{ section.settings.intro_body }}</p>
+                <h5>{{ section.settings.intro_author }}</h5>
+                <img class="caveintro-img2" src="{{ section.settings.right_img | img_url: 'master' }}" alt="">
                 <span>01</span>
             </div>
         </div>
         <!--Mobile column-->
         <div class="row cave-intro desk-hide">
             <div class="col">
-                <img class="caveintro-img2 desk-hide" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_6_9bb8d392-c986-474b-83d1-72d24cb166f9.jpg?v=1633517592" alt="">
-                <p>The silence and sunshine are a sanctuary from
-                    my profession. I love
-                    to come here and paint, read, write and, hopefully, improve my corner of Provence.</p>
-                <h5>RIDLEY SCOTT</h5>
+                <img class="caveintro-img2 desk-hide" src="{{ section.settings.right_img_mbl | img_url: 'master' }}" alt="">
+                <p>{{ section.settings.intro_body }}</p>
+                <h5>{{ section.settings.intro_author }}</h5>
             </div>
         </div>
         <!--Mobile end-->
         <div class="row box-hide">
             <div class="col-8">
-                <img style="width: 915px; margin-left: -20%;" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_7.jpg?v=1633517652" alt="">
+                <img style="width: 915px; margin-left: -20%;" 
+                src="{{ section.settings.left_img_two | img_url: 'master' }}" alt="">
                 <span>02</span>
             </div>
             <div class="col-4">
-                <img style="margin-left: 32%;width: 322.7px;height: 385.2px;" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Our_Story_4.png?v=1633517685" alt="">
+                <img style="margin-left: 32%;width: 322.7px;height: 385.2px;" 
+                src="{{ section.settings.right_img_two | img_url: 'master' }}" alt="">
 
                 <div class="numbrs">
                     <span>01</span>
-                    <p>The Provence air is lightly<br> fragranced with lavendar and bay</p>
+                    <p>{{ section.settings.point_one }}</p>
                 </div>
                 <div class="numbrs">
                     <span>02</span>
-                    <p>Syrah and Granache grapes are<br> grown around the estate</p>
+                    <p>{{ section.settings.point_two }}</p>
                 </div>
 
             </div>
@@ -103,16 +90,148 @@
         <!--Mobile column-->
         <div class="row desk-hide">
             <div class="col">
-                <img class="caveintro-img3" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_7_3b536cc1-ae83-453a-b446-10d4060e8666.jpg?v=1633517727" alt="">
+                <img class="caveintro-img3" 
+                src="{{ section.settings.left_img_two_mbl | img_url: 'master' }}" alt="">
             </div>
         </div>
         <div class="row desk-hide">
             <div class="col">
-                <img class="caveintro-img4 mbl-hide" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/STORY_8.jpg?v=1633517830" alt="">
                 <!--Mobile Img-->
-                <img class="caveintro-img4 desk-hide" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Our_Story_6.png?v=1633517871" alt="">
+                <img class="caveintro-img4 desk-hide" 
+                src="{{ section.settings.right_img_two_mbl | img_url: 'master' }}" alt="">
             </div>
         </div>
         <!--Mobile end-->
     </div>
 </section>
+
+
+{% schema %}
+{
+  "name": "Story Section2 (cave)",
+  "settings": [
+    {
+        "id": "small_title",
+        "type": "text",
+        "label": "Small Text",
+        "default": "OUR STORY"
+    },
+    {
+        "id": "text_title",
+        "type": "text",
+        "label": "Heading",
+        "default": "CAVE & VINEYARD"
+    },
+    {
+        "id": "text_body",
+        "type": "richtext",
+        "label": "Add Description",
+        "class": "cave-des mbl-hide",
+        "default": "<p>The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers.</p>"
+    },
+    {
+        "id": "slider_des",
+        "type": "richtext",
+        "label": "Add slider Description",
+        "class": "slider-dis",
+        "default": "<p>This extraordinary “Arts” house is perfect for a big family or a group of friends. It has a separate apartment with kitchen and private entrance and terrace.</p>"
+    },
+    {
+        "id": "mbl_content",
+        "type": "richtext",
+        "label": "Add Mobile Content",
+        "class": "cave-des dek-hide",
+        "default": "<p>The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers.</p>"
+    },
+    {
+      "id": "link_text",
+      "type": "text",
+      "label": "Link Text Mobile",
+      "default": "EXPLORE"
+      },
+      {
+          "id": "link",
+          "type": "url",
+          "label": "Text Link Mobile"
+      },
+      {
+        "id": "left_img",
+        "type": "image_picker",
+        "label": "Left column Image"
+    },
+    {
+        "id": "intro_body",
+        "type": "richtext",
+        "label": "Add Detail",
+        "default": "<p>THE SILENCE AND SUNSHINE ARE A SANCTUARY FROM MY PROFESSION. I LOVE TO COME HERE AND PAINT, READ, WRITE AND, HOPEFULLY, IMPROVE MY CORNER OF PROVENCE.</p>"
+    },
+    {
+        "id": "intro_author",
+        "type": "text",
+        "label": "Add Author",
+        "default": "RIDLEY SCOTT"
+    },
+    {
+        "id": "right_img",
+        "type": "image_picker",
+        "label": "right column Image"
+    },
+    {
+        "id": "right_img_mbl",
+        "type": "image_picker",
+        "label": "right column Image for mobile"
+    },
+    {
+      "id": "left_img_two",
+      "type": "image_picker",
+      "label": "Left column Image"
+  },
+  {
+    "id": "left_img_two_mbl",
+    "type": "image_picker",
+    "label": "Left column Image for mobile"
+  },
+  {
+      "id": "right_img_two",
+      "type": "image_picker",
+      "label": "right column Image"
+  },
+  {
+    "id": "right_img_two_mbl",
+    "type": "image_picker",
+    "label": "right column Image for mobile"
+   },
+  {
+      "id": "point_one",
+      "type": "text",
+      "label": "Number One Text",
+      "default": "The Provence air is lightly fragranced with lavendar and bay"
+  },
+  {
+      "id": "point_two",
+      "type": "text",
+      "label": "Number Two Text",
+      "default": "Syrah and Granache grapes are grown around the estate"
+  }
+  ],
+  "blocks": [
+  {
+      "type": "text",
+      "name": "slider Image",
+      "settings": [
+      {
+          "id": "img",
+          "type": "image_picker",
+          "label": "Image"
+      }
+      ]
+  }
+  ],
+  "presets": [
+    {
+      "name": "Test Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
