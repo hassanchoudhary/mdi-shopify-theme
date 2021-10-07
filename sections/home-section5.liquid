@@ -5,7 +5,7 @@
         <h2>{{ section.settings.title_text }}</h2>
         <div class="row mt-5 mb-5">
             {% for block in section.blocks %}
-            <div class="col-4">
+            <div class="col">
                 <img src="{{ block.settings.img | img_url: 'master' }}" alt="">
             </div>
             {% endfor %}
@@ -47,7 +47,7 @@
   "blocks": [
   {
       "type": "text",
-      "name": "Add insta Image",
+      "name": "insta Image",
       "settings": [
       {
           "id": "img",
