@@ -934,7 +934,7 @@ All Pages CSS
   .introduction-section .numbrs {
     display: none;
   }
-  .introduction-section img {
+  .introduction-section .img-png {
     width: 282px;
     height: 88px;
     float: right;
