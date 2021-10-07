@@ -1,22 +1,67 @@
 <!--Connect Section-->
 <section class="connect-section text-center">
     <div class="container">
-        <span>NEWS FROM THE ESTATE</span>
-        <h2>CONNECT</h2>
+        <span>{{ section.settings.small_title }}</span>
+        <h2>{{ section.settings.title_text }}</h2>
         <div class="row mt-5 mb-5">
-            <div class="col">
-                <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/SOCIAL_1.jpg?v=1633505470" alt="">
+            {% for block in section.blocks %}
+            <div class="col-4">
+                <img src="{{ block.settings.img | img_url: 'master' }}" alt="">
             </div>
-            <div class="col">
-                <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/SOCIAL_2.jpg?v=1633505499" alt="">
-            </div>
-            <div class="col insta-hide">
-                <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/SOCIAL_3.jpg?v=1633505528" alt="">
-            </div>
-            <div class="col insta-hide">
-                <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/SOCIAL_4.jpg?v=1633505555" alt="">
-            </div>
+            {% endfor %}
         </div>
-        <a href="contact.php"><u>EXPLORE</u></a>
+        <a href="{{ section.settings.link }}"><u>{{ section.settings.link_text }}</u></a>
     </div>
 </section>
+
+
+{% schema %}
+{
+  "name": "Home Section5 (Connect)",
+  "max_blocks": 4,
+  "settings": [
+    {
+        "id": "small_title",
+        "type": "text",
+        "label": "Small Heading",
+        "default": "NEWS FROM THE ESTATE"
+    },
+    {
+        "id": "title_text",
+        "type": "text",
+        "label": "Heading",
+        "default": "CONNECT"
+    },
+    {
+        "id": "link_text",
+        "type": "text",
+        "label": "Link Text",
+        "default": "EXPLORE"
+     },
+     {
+         "id": "link",
+         "type": "url",
+         "label": "Text Link"
+     }
+  ],
+  "blocks": [
+  {
+      "type": "text",
+      "name": "Add Box",
+      "settings": [
+      {
+          "id": "img",
+          "type": "image_picker",
+          "label": "Image"
+      }
+      ]
+  }
+  ],
+  "presets": [
+    {
+      "name": "Home Section5 Connect",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
