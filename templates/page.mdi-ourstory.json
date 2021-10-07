@@ -145,6 +145,13 @@
     "enviroment": {
       "type": "story-section5",
       "settings": {
+        "small_title": "OUR STORY",
+        "text_title": "ENVIRONMENT",
+        "text_left": "At the core of our environmental strategy and policy is the protection and the development of the bee population on the Mas. Indeed, as the old proverb says, “if the bees die, we all die”. This fundamental goal has implications on all aspects of our viticulture, starting with a state-of-the-art geographic information system to optimize all treatments in the vineyards, reducing our carbon footprint and minimizing the use of any chemicals, whether organic or not. In order to become self-sufficient waterwise, we are conducting a",
+        "text_right": "hydrological study using Ground Penetrating Radar data, to optimize the choice of our drilling sites as well as to map the sustainable reserves of underground water. The bee protection priority has led us to pursue the environmentally friendly certification, HVE, Haute Valeur Environmentale (which translates to High Environmental Value) rather than organic certification. This allows the use of only one insecticide - Pyrethrin, a known bee killer.",
+        "left_img": "shopify:\/\/shop_images\/STORY_11.jpg",
+        "right_img": "shopify:\/\/shop_images\/Our_Story_6_8cb93d41-fbee-4316-9032-02b83a8ed644.png",
+        "text_mbl": "The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers."
       }
     }
   },
