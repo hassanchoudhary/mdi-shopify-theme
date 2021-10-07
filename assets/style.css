@@ -473,7 +473,7 @@ All Pages CSS
   display: block;
 }
 
-.introduction-section img {
+.introduction-section .img-png {
   width: 591px;
   height: 160px;
   margin-left: 16%;
