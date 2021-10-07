@@ -62,12 +62,50 @@
         "left_img": "shopify:\/\/shop_images\/HOME_10.jpg",
         "mbl_img2": "shopify:\/\/shop_images\/IMG_6579.jpg",
         "intro_body": "<p>THE SILENCE AND SUNSHINE ARE A SANCTUARY FROM MY PROFESSION. I LOVE TO COME HERE AND PAINT, READ, WRITE AND, HOPEFULLY, IMPROVE MY CORNER OF PROVENCE.<\/p>",
-        "intro_author": "RIDLEY SCOTT"
+        "intro_author": "RIDLEY SCOTT",
+        "point_one": "The Provence air is lightly fragranced with lavendar and bay",
+        "point_two": "Syrah and Granache grapes are grown around the estate"
       }
     },
     "connect": {
       "type": "home-section5",
+      "blocks": {
+        "8c44b2c8-4446-4f73-b393-2653d046e55e": {
+          "type": "text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/SOCIAL_1.jpg"
+          }
+        },
+        "5b1bb913-01a5-40ef-86b8-0fe9a41a0c99": {
+          "type": "text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/SOCIAL_2.jpg"
+          }
+        },
+        "90d19fd3-0587-4748-8191-eddf0d9d5e93": {
+          "type": "text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/SOCIAL_3.jpg"
+          }
+        },
+        "dfbf05cc-9063-4949-af93-7bbc6d8b0ce9": {
+          "type": "text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/SOCIAL_4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "8c44b2c8-4446-4f73-b393-2653d046e55e",
+        "5b1bb913-01a5-40ef-86b8-0fe9a41a0c99",
+        "90d19fd3-0587-4748-8191-eddf0d9d5e93",
+        "dfbf05cc-9063-4949-af93-7bbc6d8b0ce9"
+      ],
       "settings": {
+        "small_title": "NEWS FROM THE ESTATE",
+        "title_text": "CONNECT",
+        "link_text": "EXPLORE",
+        "link": ""
       }
     }
   },
