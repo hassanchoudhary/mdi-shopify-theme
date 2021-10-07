@@ -20,6 +20,12 @@
         "text_body": "<p>The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers.<\/p>",
         "link_text": "EXPLORE",
         "link": "shopify:\/\/pages\/our-wines",
+        "left_img": "shopify:\/\/shop_images\/Home_1.png",
+        "right_img": "shopify:\/\/shop_images\/HOME_2.jpg",
+        "mbl_right": "shopify:\/\/shop_images\/HOME_2_364396bc-2135-4c75-a000-ea37a2ef9863.jpg",
+        "row_img": "shopify:\/\/shop_images\/HOME_4.jpg",
+        "mbl_row_img": "shopify:\/\/shop_images\/HOME_4.jpg",
+        "right_row_img": "shopify:\/\/shop_images\/Home_2.png",
         "point_one": "The Provence air is lightly fragranced with lavendar and bay",
         "point_two": "Syrah and Granache grapes are grown around the estate"
       }
