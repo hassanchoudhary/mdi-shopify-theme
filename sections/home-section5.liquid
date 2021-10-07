@@ -17,50 +17,36 @@
 
 {% schema %}
 {
-  "name": "Home Section5 (Connect)",
-  "max_blocks": 4,
-  "settings": [
-    {
-        "id": "small_title",
-        "type": "text",
-        "label": "Small Heading",
-        "default": "NEWS FROM THE ESTATE"
-    },
-    {
-        "id": "title_text",
-        "type": "text",
-        "label": "Heading",
-        "default": "CONNECT"
-    },
-    {
-        "id": "link_text",
-        "type": "text",
-        "label": "Link Text",
-        "default": "EXPLORE"
-     },
-     {
-         "id": "link",
-         "type": "url",
-         "label": "Text Link"
-     }
-  ],
+  "name": "Category Section",
+  "max_blocks": 10,
   "blocks": [
   {
+      "type": "text",
       "name": "Add Box",
       "settings": [
       {
+          "id": "title",
+          "type": "text",
+          "label": "Category Name"
+      },
+      {
           "id": "img",
           "type": "image_picker",
-          "label": "Image"
+          "label": "Backround Image"
+      },
+      {
+          "id": "link",
+          "type": "text",
+          "label": "Category Link"
       }
       ]
   }
   ],
   "presets": [
-    {
-      "name": "Home Section5 Connect",
-      "category": "Custom"
-    }
-  ]
+      {
+          "name": "Category Section",
+          "category": "category section"
+      }
+]
 }
 {% endschema %}
