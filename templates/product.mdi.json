@@ -1,0 +1,25 @@
+{
+    "sections": {
+      "main": {
+        "type": "header-wine-detail",
+        "settings": {
+        }
+      },
+      "pdetail": {
+        "type": "wine-detail-section1",
+        "settings": {
+        }
+      },
+      "banner": {
+        "type": "wine-detail-section2",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main",
+      "pdetail",
+      "banner"
+    ]
+  }
+  
