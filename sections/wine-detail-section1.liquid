@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col text-center detail-bg">
-                <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Product_1.png?v=1633509014" alt="">
+                <img src="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}" alt="">
             </div>
             <!---Mobile COntent--->
             <div class="col-12 desk-hide mt-5">

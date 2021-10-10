@@ -80,10 +80,8 @@
     <div class="container line">
         <div class="row product-detail-heading">
             <div class="col text-center">
-                <h2>ROSé</h2>
-                <span>SOURCE 2O2O</span>
-                <p class="desk-hide">Light salmon pink colour, aromas of tropical fruit, delightful acidity and
-                    freshness with a long and rewarding finish.</p>
+                <h2>{{ product.title | escape }}</h2>
+                <p class="desk-hide">{{ product.description | escape }}</p>
             </div>
 
         </div>
