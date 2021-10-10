@@ -1,43 +1,46 @@
 {
-    "sections": {
-      "main": {
-        "type": "nav-menu",
-        "settings": {
-        }
-      },
-      "header": {
-        "type": "header-residence",
-        "settings": {
-        }
-      },
-      "staymas": {
-        "type": "residence-section1",
-        "settings": {
-        }
-      },
-      "category": {
-        "type": "residence-section2",
-        "settings": {
-        }
-      },
-      "detail": {
-        "type": "residence-section3",
-        "settings": {
-        }
-      },
-      "acco": {
-        "type": "residence-section4",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "nav-menu",
+      "settings": {
       }
     },
-    "order": [
-      "main",
-      "header",
-      "staymas",
-      "category",
-      "detail",
-      "acco"
-    ]
-  }
-  
+    "header": {
+      "type": "header-residence",
+      "settings": {
+        "header_background": "shopify:\/\/shop_images\/Residences-Web.jpg",
+        "small_title": "INTRODUCTION",
+        "text_title": "OUR RESIDENCE",
+        "mbl_title": "RESIDENCE"
+      }
+    },
+    "staymas": {
+      "type": "residence-section1",
+      "settings": {
+      }
+    },
+    "category": {
+      "type": "residence-section2",
+      "settings": {
+      }
+    },
+    "detail": {
+      "type": "residence-section3",
+      "settings": {
+      }
+    },
+    "acco": {
+      "type": "residence-section4",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "header",
+    "staymas",
+    "category",
+    "detail",
+    "acco"
+  ]
+}
