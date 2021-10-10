@@ -3,21 +3,56 @@
     <div class="container line">
         <div class="story-vl"></div>
         <div class="row pt-4 pb-5">
+            {% for block in section.blocks %}
             <div class="col-md-4 col-sm-12 cta-box">
-                <span>SLEEPS 6</span>
-                <h4>GRIS</h4>
-                <a class=" mt-5" href="residence-detail.php"><u>EXPLORE</u></a>
+                <span>{{ block.settings.small_title }}</span>
+                <h4>{{ block.settings.text_title }}</h4>
+                <a class=" mt-5" href="{{ block.settings.link }}"><u>{{ block.settings.link_text}}</u></a>
             </div>
-            <div class="col-md-4 col-sm-12 cta-box">
-                <span>SLEEPS 10</span>
-                <h4>Les chênes verts</h4>
-                <a class=" mt-5" href="residence-detail.php"><u>EXPLORE</u></a>
-            </div>
-            <div class="col-md-4 col-sm-12 cta-box">
-                <span>SLEEPS 6</span>
-                <h4>MARCOU</h4>
-                <a class=" mt-5" href="residence-detail.php"><u>EXPLORE</u></a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
+
+
+{% schema %}
+{
+  "name": "Residence Category Section",
+  "max_blocks": 3,
+  "blocks": [
+  {
+      "type": "text",
+      "name": "Add Category",
+      "settings": [
+      {
+        "id": "small_title",
+        "type": "text",
+        "label": "Small Text"
+      },
+      {
+        "id": "text_title",
+        "type": "text",
+        "label": "Title"
+      },
+      {
+        "id": "link_text",
+        "type": "text",
+        "label": "Link Text",
+        "default": "EXPLORE"
+        },
+        {
+            "id": "link",
+            "type": "url",
+            "label": "Text Link"
+        }
+      ]
+  }
+  ],
+  "presets": [
+      {
+          "name": "Residence Category Section",
+          "category": "custom"
+      }
+]
+}
+{% endschema %}
