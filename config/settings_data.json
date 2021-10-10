@@ -52,7 +52,7 @@
           "a7cb67f8-3a51-41f2-ba15-59802448b177": {
             "type": "text",
             "settings": {
-              "footer_column": "<p>145 CHEMIN DES INFERMIÈRES, 84580 OPPÈDE, FRANCE<\/p>"
+              "footer_column": "<p>145 CHEMIN DES <\/p><p>INFERMIÈRES, 84580 <\/p><p>OPPÈDE, FRANCE<\/p>"
             }
           }
         },
