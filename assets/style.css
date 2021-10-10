@@ -1106,6 +1106,9 @@ All Pages CSS
   .footer-mbl .social-icon {
     padding: 30px 0px 30px 0px;
   }
+  .footer-mbl .social-icon a {
+    display: inline-flex;
+  }
   .footer-mbl i {
     color: #fff;
     font-size: 20px;
