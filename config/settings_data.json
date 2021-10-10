@@ -16,7 +16,9 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "color_scheme": "background-1"
+              "text": "Welcome to our store",
+              "color_scheme": "background-1",
+              "link": ""
             }
           }
         },
@@ -25,8 +27,57 @@
         ],
         "settings": {
         }
+      },
+      "footer-mdi": {
+        "type": "footer-mdi",
+        "blocks": {
+          "bba8a5c9-832c-426b-b2ed-79cab4ea82f1": {
+            "type": "text",
+            "settings": {
+              "footer_column": "<p><a href=\"\/pages\/our-wines\" title=\"Our Wines\">THE WINES<\/a><\/p><p><a href=\"# \" title=\"# \">THE ESTATE<\/a><\/p><p><a href=\"\/pages\/residence\" title=\"Residence\">THE RESIDENCE<\/a><\/p>"
+            }
+          },
+          "b429b22c-3e3e-4bbb-be8e-be1efc3e34ae": {
+            "type": "text",
+            "settings": {
+              "footer_column": "<p><a href=\"#\" title=\"#\">INSTAGRAM<\/a><\/p><p><a href=\"#\" title=\"#\">FACEBOOK<\/a><\/p><p><a href=\"\/pages\/contact-1\" title=\"Contact mdi\">CONTACT<\/a><\/p>"
+            }
+          },
+          "d8861a02-b0ef-4201-a146-9e2455c03e89": {
+            "type": "text",
+            "settings": {
+              "footer_column": "<p><a href=\"#\" title=\"#\">TERMS<\/a><\/p><p><a href=\"#\" title=\"#\">PRIVACY POLICY<\/a><\/p><p><a href=\"#\" title=\"#\">COOKIE POLICY<\/a><\/p>"
+            }
+          },
+          "a7cb67f8-3a51-41f2-ba15-59802448b177": {
+            "type": "text",
+            "settings": {
+              "footer_column": "<p>145 CHEMIN DES INFERMIÈRES, 84580 OPPÈDE, FRANCE<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "bba8a5c9-832c-426b-b2ed-79cab4ea82f1",
+          "b429b22c-3e3e-4bbb-be8e-be1efc3e34ae",
+          "d8861a02-b0ef-4201-a146-9e2455c03e89",
+          "a7cb67f8-3a51-41f2-ba15-59802448b177"
+        ],
+        "settings": {
+          "bottom_column_one": "Copyright Mas Des Infermières 2021",
+          "bottom_column_two": "Sign up for exlusive news and updates",
+          "mbl_link": "",
+          "fb_link": "",
+          "twi_link": "",
+          "pin_link": "",
+          "insta_link": "",
+          "mbl-address": "",
+          "mbl-about": ""
+        }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
