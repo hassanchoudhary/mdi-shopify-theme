@@ -16,11 +16,18 @@
     "description": {
       "type": "wine-section1",
       "settings": {
+        "desk_text": "The name “Cuvée Source” given to the first vintage made in 2009 under the Scott family’s ownership, takes it inspiration directly from this historic abundance of water. A symbol or suggestion of health, healing and good fortune.",
+        "mbl_text": "The majestic structure of Mas des Infermières, along the road of Saint Sebastien, is in the plain of Les Poulivets, a settlement just outside of Oppède-Le-Vieux.",
+        "mbl_text_two": "The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers."
       }
     },
     "collection": {
       "type": "wine-section2",
       "settings": {
+        "small_title": "THE MAS DES INFERMIERES",
+        "desk_title": "COLLECTION",
+        "mbl_title": "OUR WINES",
+        "collection": "frontpage"
       }
     }
   },
