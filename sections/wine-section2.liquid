@@ -1,5 +1,6 @@
 <!-- Wine Collection Setion-->
 <section class="wine-collection-section text-center">
+    {%- assign collection = collections[section.settings.collection] -%}
     <div class="container line">
         <div class="story-vl"></div>
         <div class="wine-vl"></div>
@@ -7,31 +8,59 @@
     </div>
     <div class="container line">
         <div class="heading">
-            <span class="mbl-hide">THE MAS DES INFERMIERES</span>
-            <span class="desk-hide">OUR WINES</span>
-            <h2>COLLECTION</h2>
+            <span class="mbl-hide">{{ section.settings.small_title }}</span>
+            <span class="desk-hide">{{ section.settings.mbl_title }}</span>
+            <h2>{{ section.settings.desk_title }}</h2>
         </div>
         <div class="row">
             <div class="owl-carousel mt-5">
+                {% for product in collection.products limit: 12 %}
                 <div class="wine-item line-left">
-                    <center> <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Product_1.png?v=1633509014" alt=""></center>
-                    <h3>ROSé SOURCE 2O2O</h3>
-                    <a class=" mt-5" href="single-product.php"><u>EXPLORE</u></a>
+                    <center> <img src="{{ product.featured_image.src | img_url: '300x' }}" alt=""></center>
+                    <h3>{{ product.title }}</h3>
+                    <a class=" mt-5" href="{{ product.url | within: collection }}"><u>EXPLORE</u></a>
                 </div>
-                <div class="wine-item text-center line-left">
-                    <center> <img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Product_2.png?v=1633509051" alt=""></center>
-                    <h3>ROUGE SOURCE 2O2O</h3>
-                    <a class=" mt-5" href="single-product.php"><u>EXPLORE</u></a>
-                </div>
-                <div class="wine-item text-center line-left">
-                    <center><img src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Product_3.png?v=1633509094" alt=""></center>
-                    <h3>CHEVALIER ROSé SOURCE 2O2O</h3>
-                    <a class=" mt-5" href="single-product.php"><u>EXPLORE</u></a>
-                </div>
-                <div class="wine-item line-left">
-                    <p>COMING SOON LOREM IPSUM DOLOR SIT AMET FUGUS LOREM.</p>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
 </section>
+
+
+
+{% schema %}
+{
+  "name": "Wines",
+  "settings": [
+    {
+      "type": "text",
+      "id": "small_title",
+      "label": "Heading",
+      "default": "THE MAS DES INFERMIERES"
+    },
+    {
+        "type": "text",
+        "id": "desk_title",
+        "label": "Desktop Title",
+        "default": "COLLECTION"
+      },
+      {
+        "type": "text",
+        "id": "mbl_title",
+        "label": "Mobile Title",
+        "default": "OUR WINES"
+      },
+    {
+      "id": "collection",
+      "type": "collection",
+      "label": "Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wines",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}
