@@ -1,9 +1,9 @@
-<div class="main-banner-area222 residence-header">
+<div class="main-banner-area222 residence-header"  style="background-image: url({{ section.settings.header_background | img_url: 'master' }});">
     <div class="row residence-heading">
         <div class="col text-center">
-            <span>INTRODUCTION</span>
-            <h2 class="mbl-hide">OUR RESIDENCE</h2>
-            <h2 class="desk-hide">RESIDENCE</h2>
+            <span>{{ section.settings.small_title }}</span>
+            <h2 class="mbl-hide">{{ section.settings.text_title }}</h2>
+            <h2 class="desk-hide">{{ section.settings.mbl_title }}</h2>
             <div class="arrow-down">
                 <a data-scroll href="#section2">
                     <div class="arrow"></div>
@@ -12,3 +12,40 @@
         </div>
     </div>
 </div>
+
+{% schema %}
+{
+  "name": "Header Residence",
+  "settings": [
+    {
+        "id": "header_background",
+        "type": "image_picker",
+        "label": "Background Image"
+    },
+    {
+        "id": "small_title",
+        "type": "text",
+        "label": "Small Text",
+        "default": "INTRODUCTION"
+      },
+      {
+        "id": "text_title",
+        "type": "text",
+        "label": "Heading",
+        "default": "OUR RESIDENCE"
+      },
+      {
+        "id": "mbl_title",
+        "type": "text",
+        "label": "Heading for Mobile",
+        "default": "RESIDENCE"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Residence Header",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
