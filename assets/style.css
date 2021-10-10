@@ -2222,7 +2222,7 @@ All Pages CSS
 }
 
 .stayimg-section .stay-point {
-  padding-top: 11%;
+  padding-top: 13%;
   padding-bottom: 10%;
 }
 
@@ -2239,6 +2239,7 @@ All Pages CSS
   font-family: LyonText;
   font-style: italic;
   color: #000;
+  width: 47%;
 }
 
 .stayimg-section .numbrs span {
