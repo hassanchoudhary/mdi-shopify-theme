@@ -10,10 +10,10 @@
         </div>
         <div class="row footer-bottom mt-5">
             <div class="col-3">
-                <p>Copyright Mas Des Infermières 2021 </p>
+                <p>{{ section.settings.bottom_column_one }} </p>
             </div>
             <div class="col-3">
-                <p>Sign up for exlusive news and updates</p>
+                <p>{{ section.settings.bottom_column_two }}</p>
             </div>
             <div class="col-6">
                 <form class="d-flex">
@@ -30,34 +30,29 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <a href="wines.php">THE WINES</a>
-                <a href="">THE ESTATE</a>
-                <a href="residences.php">THE RESIDENCES</a>
-                <a href="">TERMS</a>
-                <a href="">PRIVACY POLICY</a>
-                <a href="">COOKIE POLICY</a>
+                {{ section.settings.mbl_link }}
             </div>
         </div>
         <div class="row social-icon">
             <div class="col">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-pinterest-p"></i>
-                <i class="fab fa-instagram"></i>
+                <a href="{{ section.settings.fb_link }}"><i class="fab fa-facebook-f"></i></a>
+                <a href="{{ section.settings.twi_link }}"><i class="fab fa-twitter"></i></a>
+                <a href="{{ section.settings.pin_link }}"><i class="fab fa-pinterest-p"></i></a>
+                <a href="{{ section.settings.insta_link }}"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <hr>
         <div class="row newsletter">
             <div class="col">
-                <p>Sign up for exlusive news and updates</p>
+                <p>{{ section.settings.bottom_column_two }}</p>
                 <input type="text" class="" value="Enter Email Address">
                 <button class="btn" type="submit">Subscribe</button>
             </div>
         </div>
         <hr>
         <div class="row footermbl-bottom">
-            <p>145 Chemin des Infermières, 84580<br> Oppède, France</p>
-            <p>COPYRIGHT MAS DES Infermières 2021 </p>
+            <p>{{ section.settings.mbl_address }}</p>
+            <p>{{ section.settings.mbl_about }} </p>
         </div>
     </div>
 </section>
