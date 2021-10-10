@@ -5,17 +5,60 @@
         <div class="story-vl"></div>
         <div class="row">
             <div class="col">
-                <img class="acco-img" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Residences_2.png?v=1633522382" alt="">
+                <img class="acco-img" src="{{ section.settings.img | img_url: 'master' }}" alt="">
                 <div class="acco-link">
-                    <p>Les chênes verts</p>
-                    <a class=" mt-5" href=""><u>EXPLORE</u></a>
+                    <p>{{ section.settings.cta_text }}</p>
+                    <a class=" mt-5" href="{{ block.settings.link }}"><u>{{ block.settings.link_text}}</u></a>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <img class="acco-img1" src="https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Residences_5.png?v=1633522410" alt="">
+                <img class="acco-img1" src="{{ section.settings.img_one | img_url: 'master' }}" alt="">
             </div>
         </div>
     </div>
 </section>
+
+
+
+{% schema %}
+{
+  "name": "Residence section4",
+  "settings": [
+    {
+        "id": "img",
+        "type": "image_picker",
+        "label": "Add Image"
+    },
+    {
+        "id": "img_one",
+        "type": "image_picker",
+        "label": "Add Image"
+    },
+    {
+      "id": "cta_text",
+      "type": "text",
+      "label": "Add Title",
+      "default": "LES CHÊNES VERTS"
+    },
+    {
+      "id": "link_text",
+      "type": "text",
+      "label": "Link Text",
+      "default": "EXPLORE"
+      },
+      {
+          "id": "link",
+          "type": "url",
+          "label": "Text Link"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Residece Section4",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
