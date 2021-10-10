@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col text-center detail-bg">
-                <img src="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}" alt="">
+                <img src="{{ product.featured_image.src | img_url: '300x' }}" alt="">
             </div>
             <!---Mobile COntent--->
             <div class="col-12 desk-hide mt-5">
