@@ -2,24 +2,11 @@
 <section class="footer">
     <div class="container">
         <div class="row">
+            {% for block in section.blocks %}
             <div class="col">
-                <a href="Wines.php">THE WINES</a>
-                <a href="#">THE ESTATE</a>
-                <a href="residence.php">THE RESIDENCES</a>
+                {{ block.settings.footer_column }}
             </div>
-            <div class="col">
-                <a href="">INSTAGRAM </a>
-                <a href="">FACEBOOK</a>
-                <a href="contact.php">CONTACT</a>
-            </div>
-            <div class="col">
-                <a href="">TERMS</a>
-                <a href="">PRIVACY POLICY</a>
-                <a href="">COOKIE POLICY</a>
-            </div>
-            <div class="col">
-                <p style="text-transform: uppercase;">145 Chemin des Infermières, 84580 Oppède, France</p>
-            </div>
+            {% endfor %}
         </div>
         <div class="row footer-bottom mt-5">
             <div class="col-3">
@@ -74,6 +61,52 @@
         </div>
     </div>
 </section>
+
+
+
+
+{% schema %}
+{
+  "name": "Footer mdi",
+  "max_blocks": 4,
+  "settings": [
+  {
+      "id": "bottom_column_one",
+      "type": "text",
+      "label": "Footer Bottom Column One",
+      "default": "Copyright Mas Des Infermières 2021"
+  },
+  {
+      "id": "bottom_column_two",
+      "type": "text",
+      "label": "Footer Bottom Column Two",
+      "default": "Sign up for exlusive news and updates"
+  }
+  ],
+  "blocks": [
+  {
+      "type": "text",
+      "name": "column",
+      "settings": [
+      {
+        "id": "footer_column",
+        "type": "richtext",
+        "label": "Add Footer Text Or link herer"
+      }
+      ]
+  }
+  ],
+  "presets": [
+      {
+          "name": "Footer mdi",
+          "category": "custom"
+      }
+]
+}
+{% endschema %}
+
+
+
 
 
 </body>
