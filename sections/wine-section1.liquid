@@ -4,16 +4,43 @@
         <div class="story-vl"></div>
         <div class="row mt-3 pb-4">
             <div class="col">
-                <p class="mbl-hide">The name “Cuvée Source” given to the first vintage made in 2009 under the Scott
-                    family’s ownership, takes it inspiration directly from this historic abundance of water. A
-                    symbol or suggestion of health, healing and good fortune.</p>
-                <p class="desk-hide dis-p1">The majestic structure of Mas des Infermières, along the road of Saint
-                    Sebastien, is in the plain of Les Poulivets, a settlement just outside of Oppède-Le-Vieux.</p>
-                <p class="desk-hide dis-p2">The Mas des Infermières estate is a mythical and private place; a vast,
-                    rambling and rich land where exceptional wines are created under the warmth of the Provençal
-                    sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played
-                    out over long hot summers.</p>
+                <p class="mbl-hide">{{ section.settings.desk_text }}</p>
+                <p class="desk-hide dis-p1">{{ section.settings.mbl_text }}</p>
+                <p class="desk-hide dis-p2">{{ section.settings.mbl_text }}</p>
             </div>
         </div>
     </div>
 </section>
+
+
+{% schema %}
+{
+  "name": "Wine Section2",
+  "settings": [
+    {
+      "id": "desk_text",
+      "type": "rihtext",
+      "label": "Text for Desktop",
+      "default": "<p>he name “Cuvée Source” given to the first vintage made in 2009 under the Scott family’s ownership, takes it inspiration directly from this historic abundance of water. A symbol or suggestion of health, healing and good fortune.</p>"
+    },
+    {
+      "id": "mbl_text",
+      "type": "richtext",
+      "label": "Add Mobile Text Here",
+      "default": "<p>The majestic structure of Mas des Infermières, along the road of Saint Sebastien, is in the plain of Les Poulivets, a settlement just outside of Oppède-Le-Vieux.</p>"
+    },
+    {
+      "id": "mbl_text_two",
+      "type": "richtext",
+      "label": "Add Mobile Text here",
+      "default": "<p>The Mas des Infermières estate is a mythical and private place; a vast, rambling and rich land where exceptional wines are created under the warmth of the Provençal sun. Since 1992 the Scott family have come here to paint, to read and to enjoy the life, played out over long hot summers.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wine Section2",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
