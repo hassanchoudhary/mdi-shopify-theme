@@ -8,6 +8,9 @@
     "header": {
       "type": "header-wines",
       "settings": {
+        "header_background": "shopify:\/\/shop_images\/Wines-Web.jpg",
+        "small_title": "INTRODUCTION",
+        "text_title": "OUR WINES"
       }
     },
     "description": {
