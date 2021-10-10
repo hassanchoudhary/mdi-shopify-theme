@@ -1772,7 +1772,7 @@ All Pages CSS
 
 /*  ######################## Wines PAGE CSS ############ */
 .wine-header {
-  background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Wines-Web.jpg?v=1633516545");
+  /* background-image: url("https://cdn.shopify.com/s/files/1/0605/1069/9691/files/Wines-Web.jpg?v=1633516545"); */
   background-size: cover;
   /* Scroll arrow css */
 }
