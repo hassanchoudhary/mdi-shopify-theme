@@ -29,6 +29,40 @@
     },
     "category": {
       "type": "residence-section2",
+      "blocks": {
+        "a0d70b28-591a-4ff6-b176-cd749758e0c9": {
+          "type": "text",
+          "settings": {
+            "small_title": "SLEEPS 6",
+            "text_title": "GRIS",
+            "link_text": "EXPLORE",
+            "link": ""
+          }
+        },
+        "c56c93ef-36bd-4a05-be38-bc20b46cb457": {
+          "type": "text",
+          "settings": {
+            "small_title": "SLEEPS 10",
+            "text_title": "LES CHÊNES VERTS",
+            "link_text": "EXPLORE",
+            "link": ""
+          }
+        },
+        "e49f3d48-847c-46d5-84ad-77b8733f82ae": {
+          "type": "text",
+          "settings": {
+            "small_title": "SLEEPS 6",
+            "text_title": "MARCOU",
+            "link_text": "EXPLORE",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a0d70b28-591a-4ff6-b176-cd749758e0c9",
+        "c56c93ef-36bd-4a05-be38-bc20b46cb457",
+        "e49f3d48-847c-46d5-84ad-77b8733f82ae"
+      ],
       "settings": {
       }
     },
