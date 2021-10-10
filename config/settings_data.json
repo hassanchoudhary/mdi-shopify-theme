@@ -65,13 +65,13 @@
         "settings": {
           "bottom_column_one": "Copyright Mas Des Infermières 2021",
           "bottom_column_two": "Sign up for exlusive news and updates",
-          "mbl_link": "",
-          "fb_link": "",
-          "twi_link": "",
-          "pin_link": "",
-          "insta_link": "",
-          "mbl-address": "",
-          "mbl-about": ""
+          "mbl_link": "<p><a href=\"\/pages\/our-wines\" title=\"Our Wines\">THE WINES<\/a><\/p><p><a href=\"#\" title=\"#\">THE ESTATE<\/a><\/p><p><a href=\"\/pages\/residence\" title=\"Residence\">THE RESIDENCES<\/a><\/p><p><a href=\"#\" title=\"#\">TERMS<\/a><\/p><p><a href=\"#\" title=\"#\">PRIVACY POLICY<\/a><\/p><p><a href=\"#\" title=\"#\">COOKIE POLICY<\/a><\/p>",
+          "fb_link": "#",
+          "twi_link": "#",
+          "pin_link": "#",
+          "insta_link": "#",
+          "mbl-address": "145 Chemin des Infermières, 84580  Oppède, France",
+          "mbl-about": "COPYRIGHT MAS DES Infermières 2021"
         }
       }
     },
