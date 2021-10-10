@@ -86,6 +86,11 @@
     "acco": {
       "type": "residence-section4",
       "settings": {
+        "img": "shopify:\/\/shop_images\/Residences_2.png",
+        "img_one": "shopify:\/\/shop_images\/Residences_5.png",
+        "cta_text": "LES CHÊNES VERTS",
+        "link_text": "EXPLORE",
+        "link": ""
       }
     }
   },
