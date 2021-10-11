@@ -24,7 +24,13 @@
             <div id="mySearch" class="overlay2">
                 <a href="javascript:void(0)" class="closebtn2" onclick="closeSearch()">&times;</a>
                 <div class="overlay-content">
-                    <input type="text" class="form-control" value="Search">
+                    <form action="{{ routes.search_url }}">
+                    <input type="text" class="form-control"
+                    placeholder="Search"
+                    name="q"
+                    value="{{ search.terms | escape }}">
+                    <input type="submit" value="Search">
+                </form>
                 </div>
             </div>
         </div>
