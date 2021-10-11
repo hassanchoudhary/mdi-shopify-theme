@@ -8,6 +8,9 @@
     "header": {
       "type": "header-contact",
       "settings": {
+        "header_background": "shopify:\/\/shop_images\/Contact-Web.jpg",
+        "small_title": "CONTACT",
+        "text_title": "GET IN TOUCH"
       }
     },
     "form": {
