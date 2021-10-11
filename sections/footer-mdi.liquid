@@ -46,23 +46,9 @@
             <div class="col">
                 <p>{{ section.settings.bottom_column_two }}</p>
                 {% form 'customer' %}
-                {{ form.errors | default_errors }}
-                {% if form.posted_successfully? %}
-                  <p>{{ 'general.newsletter_form.confirmation' | t }}</p>
-                {% else %}
-                  <input type="hidden" name="contact[tags]" value="newsletter">
-                  <input type="email"
-                    name="contact[email]"
-                    id="Email"
-                    value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
-                    placeholder="Enter Email Address"
-                    autocorrect="off"
-                    autocapitalize="off">
-                  <button type="submit" name="commit" id="Subscribe">
-                    <span>Subscribe</span>
-                  </button>
-                {% endif %}
-              {% endform %}
+                <input type="text" class="" value="Enter Email Address" name="customer[email]">
+                <button class="btn" type="submit">Subscribe</button>
+                {% endform %}
             </div>
         </div>
         <hr>
