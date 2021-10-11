@@ -3,9 +3,8 @@
     <div class="container line">
         <div class="heading">
             <center>
-                <h2>CONTACT THE MAS</h2>
-                <p>Please use the contact form below with your query, and one of our team<br> will be in touch as
-                    soon as possible</p>
+                <h2>{{ section.settings.custom_text_title }}</h2>
+                <p>{{ section.settings.custom_text_body }}</p>
             </center>
         </div>
         {% form 'contact' %}
@@ -40,3 +39,30 @@
             {% endform %}
     </div>
 </section>
+
+
+{% schema %}
+{
+  "name": "Form Section",
+  "settings": [
+    {
+      "id": "custom_text_title",
+      "type": "text",
+      "label": "Form heading",
+      "default": "CONTACT THE MAS"
+    },
+    {
+      "id": "custom_text_body",
+      "type": "richtext",
+      "label": "Add Form Discription",
+      "default": "<p>Please use the contact form below with your query, and one of our team will be in touch as soon as possible</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Form Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
