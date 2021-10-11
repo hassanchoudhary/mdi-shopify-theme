@@ -45,8 +45,10 @@
         <div class="row newsletter">
             <div class="col">
                 <p>{{ section.settings.bottom_column_two }}</p>
-                <input type="text" class="" value="Enter Email Address">
+                {% form 'create_customer' %}
+                <input type="text" class="" value="Enter Email Address" name="customer[email]">
                 <button class="btn" type="submit">Subscribe</button>
+                {% endform %}
             </div>
         </div>
         <hr>
