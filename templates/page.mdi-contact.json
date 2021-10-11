@@ -1,31 +1,66 @@
 {
-    "sections": {
-      "main": {
-        "type": "nav-menu",
-        "settings": {
-        }
-      },
-      "header": {
-        "type": "header-contact",
-        "settings": {
-        }
-      },
-      "form": {
-        "type": "contact-section2",
-        "settings": {
-        }
-      },
-      "connect": {
-        "type": "home-section5",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "nav-menu",
+      "settings": {
       }
     },
-    "order": [
-      "main",
-      "header",
-      "form",
-      "connect"
-    ]
-  }
-  
+    "header": {
+      "type": "header-contact",
+      "settings": {
+      }
+    },
+    "form": {
+      "type": "contact-section2",
+      "settings": {
+      }
+    },
+    "connect": {
+      "type": "home-section5",
+      "blocks": {
+        "7894ee61-0846-41c7-9387-11a32aa2ecdd": {
+          "type": "text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/SOCIAL_1.jpg"
+          }
+        },
+        "70fef086-bc7c-4dcb-9b4a-d272caf50c27": {
+          "type": "text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/SOCIAL_2.jpg"
+          }
+        },
+        "e0f4d8f8-ac35-489a-bce1-cc2d7faf531a": {
+          "type": "text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/SOCIAL_3.jpg"
+          }
+        },
+        "880ba75d-a23c-45da-a127-ac5704cd2a13": {
+          "type": "text",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/SOCIAL_4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "7894ee61-0846-41c7-9387-11a32aa2ecdd",
+        "70fef086-bc7c-4dcb-9b4a-d272caf50c27",
+        "e0f4d8f8-ac35-489a-bce1-cc2d7faf531a",
+        "880ba75d-a23c-45da-a127-ac5704cd2a13"
+      ],
+      "settings": {
+        "small_title": "NEWS FROM THE ESTATE",
+        "title_text": "CONNECT",
+        "link_text": "EXPLORE",
+        "link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "header",
+    "form",
+    "connect"
+  ]
+}
