@@ -217,8 +217,8 @@ Navbar Area CSS
   .mdi-responsive-nav {
     display: block;
     padding: 20px 20px 0px 20px;
-    /*Mobile Search overlay */
   }
+  /*Mobile Search overlay */
   .mdi-responsive-nav .overlay {
     height: 100%;
     width: 0;
